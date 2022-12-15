@@ -1,10 +1,11 @@
 class MerchantsController < ApplicationController
     def index
-        @merchants = Merchant.all
+        @merchants = MerchantFacade.find_merchants
     end
 
     def show
-        @merchant = Merchant.find(params[:id])
+        @merchant = MerchantFacade.find_merchant_by_id(params[:id])
+        @items = MerchantFacade.find_merchant_items(params[:id])
     end
 
     private
