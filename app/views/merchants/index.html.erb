@@ -1,4 +1,6 @@
 <h1>Merchants</h1>
+<div class="btn-group-vertical" role="group" aria-label="Basic example">
 <% @merchants.each do |merchant| %>
-  <p><%= link_to merchant.name, "/merchants/#{merchant.id}" %></p>
+  <p><button type="button" class="btn btn-link"><%= link_to merchant.name, "/merchants/#{merchant.id}" %></button></p>
 <% end %>
+</div>

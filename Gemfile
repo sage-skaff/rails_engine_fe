@@ -27,7 +27,7 @@ gem 'jbuilder', '~> 2.5'
 # Use ActiveModel has_secure_password
 gem 'bcrypt', '~> 3.1.7'
 gem 'faraday'
-
+gem 'bootstrap', '~> 5.2.2'
 # Use ActiveStorage variant
 # gem 'mini_magick', '~> 4.8'
 
